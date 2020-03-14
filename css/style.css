@@ -1,0 +1,370 @@
+@font-face {
+    font-family: 'SVN-Gilroy Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SVN-Gilroy Light'), url('https://www.cufonfonts.com/cdn/webfont/svn-gilroy/SVNGilroy+Light.woff?token=L9Ciqw0MJz8pWmKfEprkirvWF3T_HECn') format('woff');
+}
+@font-face {
+    font-family: 'SVN-Gilroy Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SVN-Gilroy Bold'), url('https://www.cufonfonts.com/cdn/webfont/svn-gilroy/SVNGilroy+Bold.woff?token=L9Ciqw0MJz8pWmKfEprkirvWF3T_HECn') format('woff');
+}
+@media screen and (max-width: 320px) , screen and (max-height: 568px){
+    .container-green{
+        height: 30vh;
+    }
+    .container-white{
+        border-radius: 3rem 0 0 0;
+    }
+    .current-production-text{
+        font-size: .7rem;
+    }
+    .saved-text{
+        font-size: .7rem;
+    }
+    .saved-money-price{
+        font-size: 4rem;
+    }
+    .dollar-sign{
+        font-size: 3.6rem;
+    }
+   
+}
+@media screen and (min-width: 321px) , screen and (min-height: 569px){
+    .container-green{
+        height: 33vh;
+    }
+    .container-white{
+        border-radius: 3.7rem 0 0 0;
+    }
+    .current-production-text{
+        font-size: .8rem;
+    }
+    .saved-text{
+        font-size: .8rem;
+    }
+    .saved-money-price{
+        font-size: 5rem;
+    }
+    .dollar-sign{
+        font-size:3.9rem;
+    }
+    
+}
+body{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+}
+.container-class {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(22,177,177,1) 41%, rgba(22,177,177,1) 100%, rgba(22,177,177,1) 100%);
+    min-height: 100vh;
+}
+.header{
+    display: flex;
+    width: 100%;
+    background-color: rgb(22, 177, 177);
+}
+.row{
+    display:flex;
+    padding-top: 3rem;
+    align-items: center;
+}
+.col-green-header{
+    width: 100%;
+    margin-left: 1.7rem;
+}
+.nav-fa-bar{
+    width:5%;
+    margin-left: 1.5rem;
+}
+.fa-bar-icon{
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.text-header{
+    margin-left: 1.3rem;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+    color: white;
+    font-weight: 500;
+    font-family: "SVN-Gilroy Bold";
+}
+
+/*MAIN SECTION*/
+main{
+    display:flex;
+    width: 100%;
+    flex: 1;
+    border-top-left-radius: 5rem;
+    background-color: white;
+    /* margin-left: 1.7rem; */
+}
+.container-box-1{
+    display: flex;
+    margin-left:1rem;
+   padding-top: 5rem;
+    width:100%;
+}
+.container-row-1{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.container-box-2{
+    position: relative;
+    z-index: 3;
+    top: -8em;
+    width: 50%;
+}
+.container-buttons{
+    display: flex;
+    margin-left:2rem;
+}
+.row-box{
+    display:flex;
+    width:92px;
+    border-radius: 0.8rem;
+    border:1px solid #6a979734;
+}
+.container-buttons-box{
+    position: relative;
+}
+.container-buttons-bg{
+    position: absolute;
+    content:"";
+    width: 49px;
+    height: 46px;
+    border-radius: .8rem;
+    background-color:#01a3a379;
+}
+.dollar{
+    color:white;
+    font-size: 1.5rem;
+  
+}
+.thunder-button{
+    padding: .6em 1rem .5rem 1rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    max-width:100%;
+    z-index: 1;
+}
+.lighting{
+    color:#01a3a379;
+    font-size: 1.5rem;  
+}
+.buttons{
+    padding: .6em 1rem .6rem 1rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    max-width:100%;
+    z-index: 1;
+}
+
+/*TEXTS*/
+.container-box-prices{
+    margin-top:2rem;
+}
+.container-text-headers{
+    display: flex;
+    width:100%;
+}
+.row-saved-price{
+    width: 100%;
+}
+.saved-text{
+    font-weight: 900;
+    margin: 0 0 0 2.1rem;
+    color: 	#005073;
+    font-family: 'Poppins', sans-serif;
+}
+.saved-money{
+    letter-spacing: -2px;
+    margin:0 0 0 1.8rem;
+    padding:0;
+    font-weight: 700;
+    color: 	#005073;
+    font-family: 'Poppins', sans-serif;
+}
+.dollar-sign{
+    font-family: 'Nunito Sans', sans-serif;
+    margin-right: -.2rem;
+    font-size: 4.8rem;
+    color: 	#005073;
+    padding: 0;
+    margin: 0;
+}
+.saved-money-price{
+    color: 	#005073;
+    margin-left: -.4rem;
+    font-weight: 600;
+}
+.dollar-price-current{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2.3rem;
+    color:rgb(242, 119, 121); 
+}
+.current-production-text{
+    font-weight: 900;
+    margin: 0 0 0 2.1rem;
+    color:rgb(242, 119, 121); 
+    font-family: 'Poppins', sans-serif;
+}
+.three{
+    font-family: 'Dosis', sans-serif;
+    margin-left: -5px;
+    color:rgb(242, 119, 121); 
+}
+.four{
+    font-family: 'Dosis', sans-serif;
+}
+.zero{
+    font-family: "Monda", sans-serif;
+}
+.current-numbers{
+    font-size: 2.3rem;
+    color:rgb(242, 119, 121); 
+}
+.current-money{
+    margin: 0 0 0 2.1rem;
+}
+
+/*MY LAMP*/
+.half-circle {
+    position: absolute;
+    right: -16px;
+    bottom: 119px;
+    width: 115px;
+    height: 56px;
+    background-color: rgba(255, 235, 59, 0.38);
+    border-top-left-radius: 214px;
+    border-top-right-radius: 214px;
+    border: 14px solid rgba(255, 235, 59, 0.04);
+    border-bottom: 0;
+    transform: rotate(-75deg);
+}
+.half-circle2 {
+    position: absolute;
+    right: -32px;
+    bottom: 96px;
+    width: 116px;
+    height: 60px;
+    background-color: rgba(255, 241, 118, 0.87);
+    border-top-left-radius: 214px;
+    border-top-right-radius: 214px;
+    border: 17px solid rgba(255, 235, 59, 0.12);
+    border-bottom: 0;
+    transform: rotate(-90deg);
+}
+/* .line-rotate{
+    position: absolute;
+    bottom: 63px;
+    right: 27px;
+    padding: .5rem;
+    background-size: auto auto;
+    background-color: rgb(254, 130, 132);
+    background-image: repeating-linear-gradient(78deg, transparent, transparent 4px, rgb(242, 119, 121) 4px, rgba(242, 119, 119, 0) 8px );
+    border-radius: 9rem 0 0 1rem;
+    transform: rotate(57deg);
+    width: 20px;
+} */
+.line-1{
+    position: absolute;
+    right: 4px;
+    bottom: 49px;
+    padding: 0.6rem;
+    background-size: auto auto;
+    background-color: rgba(254, 130, 132, 1);
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(242, 119, 121, 1) 4px, rgba(242, 119, 121, 1) 8px );
+    border-radius: 1rem 0 0 5rem;
+    width: 22px;
+}
+
+.line-2{
+    position: absolute;
+    right: 4px;
+    bottom: 38px;
+    padding: .5rem;
+    background-size: auto auto;
+    background-color: rgba(254, 130, 132, 1);
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(242, 119, 121, 1) 4px, rgba(242, 119, 121, 1) 8px );
+    border-radius: 0rem 0 0 5rem;
+    width: 19px;
+
+}
+.line-3{
+    position: absolute;
+    border-radius: 0rem 0 0 5rem;
+    right: 4px;
+    bottom: 27px;
+    background-size: auto auto;
+    background-color: rgba(254, 130, 132, 1);
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(242, 119, 121, 1) 4px, rgba(242, 119, 121, 1) 8px );
+    width: 13px;
+    padding: 0.5rem;
+}
+/*FOOTER SECTION*/
+footer{
+    display:flex;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
+.container-footer{
+    display: flex;
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(242, 119, 121);
+    border-radius: 6rem 0 0 0;
+}
+.container-row{
+    display:flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    width: 100%;
+}
+.col-icons, .col-icons2{
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.col-icons2{
+    margin-top: 1.5rem;
+}
+.col-icon{
+    display: flex;
+    justify-content: center;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+}
+.col-icon:hover{
+    transform: translateY(-.5rem);
+}
+.col-icons-row, .col-icons-row2, .col-icons-row3{ 
+    border-radius: 10px;
+    width: 60px;
+}
+.inside-col{
+    background-color: ivory;
+    border:solid 2px white;
+    width: 60px;
+    border-radius: 2rem;
+}
+.image1{
+    max-width:55%;
+    cursor: pointer;
+    height: auto;
+} 
+
+
+
+
